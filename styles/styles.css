@@ -1,125 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitrix - Integrated Intranet Platform</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1 class="logo">Sitrix</h1>
-            <nav>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <h2>Welcome to Sitrix</h2>
-            <p>The ultimate platform for solving cubes and enhancing your spatial reasoning skills.</p>
-            <a href="#features" class="cta-button">Get Started</a>
-        </div>
-    </section>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
 
-    <!-- Features Section -->
-    <section id="features">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <h3>User Authentication</h3>
-                    <p>Secure login and profile management.</p>
-                </div>
-                <div class="feature">
-                    <h3>Puzzle Generation</h3>
-                    <p>Generate puzzles of varying difficulty.</p>
-                </div>
-                <div class="feature">
-                    <h3>Leaderboard</h3>
-                    <p>Compete with others and track your progress.</p>
-                </div>
-                <div class="feature">
-                    <h3>Multiplayer Mode</h3>
-                    <p>Challenge your friends in real-time matches.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
 
-    <!-- How It Works Section -->
-    <section id="how-it-works">
-        <div class="container">
-            <h2>How It Works</h2>
-            <p>Learn how to navigate through the game and achieve your goals.</p>
-            <div class="steps">
-                <div class="step">
-                    <h3>Step 1</h3>
-                    <p>Sign up and create your profile.</p>
-                </div>
-                <div class="step">
-                    <h3>Step 2</h3>
-                    <p>Select a puzzle to solve.</p>
-                </div>
-                <div class="step">
-                    <h3>Step 3</h3>
-                    <p>Arrange the shapes to meet the objectives.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
 
-    <!-- About Us Section -->
-    <section id="about-us">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="team">
-                <div class="team-member">
-                    <h3>Abubakr Parvez</h3>
-                    <p>Lead Developer</p>
-                </div>
-                <div class="team-member">
-                    <h3>Shuaib Kassim</h3>
-                    <p>Designer and Programmer</p>
-                </div>
-            </div>
-        </div>
-    </section>
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+header ul {
+    padding: 0;
+    list-style: none;
+}
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+header .logo {
+    float: left;
+}
 
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+header nav {
+    float: right;
+    margin-top: 10px;
+}
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Sitrix. All Rights Reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+#hero {
+    background: #0779e4;
+    color: #fff;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
 
+#hero h2 {
+    margin-top: 30px;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+#hero p {
+    font-size: 20px;
+}
+
+#hero .cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #0779e4;
+    background: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section#features .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+section#features .feature {
+    background: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
