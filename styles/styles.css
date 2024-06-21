@@ -124,6 +124,14 @@ nav ul li a:hover {
     background: #ff69b4; /* Slightly darker pink shade on hover */
 }
 
+.feature h3 {
+    color: #00ffff; /* Bright cyan color for headings */
+}
+
+.feature p {
+    color: #00ffff; /* Bright cyan color for paragraph text */
+}
+
 /* How It Works Section */
 #how-it-works {
     background: #282828;
