@@ -3,7 +3,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #ffffff;
+    background-color: #121212;
 }
 
 .container {
@@ -12,8 +13,8 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #1f1f1f;
+    color: #00ff00;
     padding: 10px 0;
 }
 
@@ -39,18 +40,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #00ff00;
     text-decoration: none;
 }
 
 nav ul li a:hover {
+    color: #ff0000;
     text-decoration: underline;
 }
 
 /* Hero Section */
 #hero {
     background: url('../images/cubes.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 100px 0;
 }
@@ -58,33 +60,41 @@ nav ul li a:hover {
 #hero h2 {
     font-size: 48px;
     margin-bottom: 20px;
+    color: #00ff00;
+    text-shadow: 2px 2px #ff0000;
 }
 
 #hero p {
     font-size: 24px;
     margin-bottom: 30px;
+    color: #cccccc;
 }
 
 .cta-button {
     padding: 10px 20px;
-    background: #ff5733;
-    color: #fff;
+    background: #00ff00;
+    color: #000000;
     text-decoration: none;
     border-radius: 5px;
+    transition: background 0.3s;
 }
 
 .cta-button:hover {
-    background: #c70039;
+    background: #ff0000;
+    color: #ffffff;
 }
 
 /* Features Section */
 #features {
     padding: 50px 0;
+    background-color: #1f1f1f;
+    color: #ffffff;
 }
 
 #features h2 {
     text-align: center;
     margin-bottom: 40px;
+    color: #00ff00;
 }
 
 .features-grid {
@@ -95,12 +105,13 @@ nav ul li a:hover {
 
 .feature {
     width: 22%;
-    background: #f4f4f4;
+    background: #282828;
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 5px;
     transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .feature img {
@@ -110,17 +121,20 @@ nav ul li a:hover {
 
 .feature:hover {
     transform: translateY(-10px);
+    background: #383838;
 }
 
 /* How It Works Section */
 #how-it-works {
-    background: #e2e2e2;
+    background: #282828;
     padding: 50px 0;
+    color: #ffffff;
 }
 
 #how-it-works h2 {
     text-align: center;
     margin-bottom: 40px;
+    color: #00ff00;
 }
 
 .steps {
@@ -131,16 +145,38 @@ nav ul li a:hover {
 .step {
     width: 30%;
     text-align: center;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    background: #383838;
+}
+
+.step h3 {
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #cccccc;
 }
 
 /* About Us Section */
 #about-us {
     padding: 50px 0;
+    background-color: #1f1f1f;
+    color: #ffffff;
 }
 
 #about-us h2 {
     text-align: center;
     margin-bottom: 40px;
+    color: #00ff00;
 }
 
 .team {
@@ -151,6 +187,16 @@ nav ul li a:hover {
 .team-member {
     width: 30%;
     text-align: center;
+    background: #282828;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    background: #383838;
 }
 
 .team-member img {
@@ -162,23 +208,30 @@ nav ul li a:hover {
 
 /* Contact Section */
 #contact {
-    background: #f4f4f4;
+    background: #282828;
     padding: 50px 0;
+    color: #ffffff;
 }
 
 #contact h2 {
     text-align: center;
     margin-bottom: 40px;
+    color: #00ff00;
 }
 
 form {
     width: 50%;
     margin: 0 auto;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 form label {
     display: block;
     margin-bottom: 10px;
+    color: #cccccc;
 }
 
 form input,
@@ -186,27 +239,31 @@ form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     border-radius: 5px;
+    background-color: #121212;
+    color: #ffffff;
 }
 
 form button {
     padding: 10px 20px;
-    background: #ff5733;
-    color: #fff;
+    background: #00ff00;
+    color: #000000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 form button:hover {
-    background: #c70039;
+    background: #ff0000;
+    color: #ffffff;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    background: #1f1f1f;
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
 }
