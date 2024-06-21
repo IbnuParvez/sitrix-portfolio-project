@@ -1,115 +1,213 @@
-/* styles/styles.css */
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
     padding: 10px 0;
 }
 
 header .logo {
-    float: left;
+    display: inline-block;
+    font-size: 24px;
     margin: 0;
-    padding: 0 20px;
 }
 
-header nav {
+nav {
     float: right;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
     margin-left: 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
 #hero {
-    background: url('../images/cubes.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('../images/cubes.jpg') no-repeat center center/cover;
     color: #000000;
     text-align: center;
     padding: 100px 0;
 }
 
-#hero .cta-button {
-    background-color: #e74c3c;
-    color: #fff;
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
     padding: 10px 20px;
+    background: #ff5733;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
+.cta-button:hover {
+    background: #c70039;
+}
+
+/* Features Section */
 #features {
-    background-color: #f4f4f4;
     padding: 50px 0;
+}
+
+#features h2 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 22%;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s;
 }
 
 .feature img {
-    width: 100%;
-    height: auto;
+    max-width: 100px;
+    margin-bottom: 20px;
 }
 
-.feature h3 {
-    margin-top: 10px;
-    font-size: 1.5em;
+.feature:hover {
+    transform: translateY(-10px);
 }
 
-#about-us, #how-it-works, #contact {
+/* How It Works Section */
+#how-it-works {
+    background: #e2e2e2;
     padding: 50px 0;
+}
+
+#how-it-works h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.step {
+    width: 30%;
+    text-align: center;
+}
+
+/* About Us Section */
+#about-us {
+    padding: 50px 0;
+}
+
+#about-us h2 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .team {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .team-member {
-    flex: 1 1 45%;
-    margin: 10px;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
+    width: 30%;
     text-align: center;
 }
 
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #c70039;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-.hero-title {
-    color: #ff6347;
-    font-size: 2.5em;
-}
