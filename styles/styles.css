@@ -125,11 +125,11 @@ nav ul li a:hover {
 }
 
 .feature h3 {
-    color: #00ffff; /* Bright cyan color for headings */
+    color: #000000; /* Bright cyan color for headings */
 }
 
 .feature p {
-    color: #00ffff; /* Bright cyan color for paragraph text */
+    color: #000000; /* Bright cyan color for paragraph text */
 }
 
 /* How It Works Section */
