@@ -36,7 +36,7 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Form validation
+// Form validation and submission
 document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -64,8 +64,32 @@ document.querySelector('form').addEventListener('submit', function(e) {
     }
 
     if (valid) {
-        alert('Form submitted successfully!');
-        // Add actual form submission code here
+        const formData = new FormData(this);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        fetch("https://formspree.io/f/mrbzzeyb", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => {
+            if (response.ok) {
+                alert("Form submitted successfully!");
+                this.reset();
+            } else {
+                return response.json().then(data => {
+                    alert(`Error: ${data.error || "Something went wrong"}`);
+                });
+            }
+        })
+        .catch(error => {
+            alert(`Error: ${error.message}`);
+        });
     }
 });
 
