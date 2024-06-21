@@ -87,7 +87,7 @@ nav ul li a:hover {
 /* Features Section */
 #features {
     padding: 50px 0;
-    background-color: #1f1f1f;
+    background-color: #282828;
     color: #ffffff;
 }
 
@@ -105,7 +105,7 @@ nav ul li a:hover {
 
 .feature {
     width: 22%;
-    background: #282828;
+    background: #ffb6c1; /* Lighter pink background */
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -121,7 +121,7 @@ nav ul li a:hover {
 
 .feature:hover {
     transform: translateY(-10px);
-    background: #383838;
+    background: #ff69b4; /* Slightly darker pink shade on hover */
 }
 
 /* How It Works Section */
