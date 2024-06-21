@@ -48,8 +48,8 @@ header nav ul li a {
 
 /* Hero Section */
 #hero {
-    background: url('images/cubes.jpg') no-repeat center center/cover;
-    color: #fff;
+    background: url('images/cubes.jpg');
+    color: #000000;
     padding: 100px 0;
     text-align: center;
 }
