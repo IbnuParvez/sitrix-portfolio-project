@@ -228,23 +228,25 @@ nav ul li a:hover {
 
 /* Style for the GitHub repository section */
 .repository {
-    background-color: #1f1f1f;
-    color: #ffffff;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #1f1f1f; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 8px 12px; /* Padding around content */
+    margin: 0 auto; /* Center horizontally */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    display: inline-block; /* Display as inline-block for sizing */
+    font-size: 16px; /* Font size (adjust as needed) */
 }
 
 .repository a {
-    color: #d1a7f1;
-    text-decoration: none;
-    margin-right: 10px;
+    color: #d1a7f1; /* Light purple link color */
+    text-decoration: none; /* Remove underline */
+    margin-right: 10px; /* Margin between links */
 }
 
 .repository a:hover {
-    color: #ff69b4;
-    text-decoration: underline;
+    color: #ff69b4; /* Pink link color on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Contact Section */
