@@ -224,36 +224,41 @@ nav ul li a:hover {
 }
 
 /* Styling for the GitHub Repository button */
-.team-member:last-child {
-    width: auto; /* Adjust width as needed */
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #282828;
-    padding: 20px;
-    border-radius: 5px;
-    transition: transform 0.3s;
+/* Add this to your existing CSS */
+.team-member {
+    background-color: #282828; /* Match the background color of the team members' tab */
+    color: #d1a7f1; /* Light purple text color */
+    padding: 20px; /* Padding around content */
+    margin: 20px auto; /* Center horizontally and add margin */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center the text */
+    width: 250px; /* Set a fixed width */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
 }
 
-.team-member:last-child:hover {
-    transform: translateY(-10px);
-    background: #383838;
+.team-member p {
+    margin: 0 0 10px 0; /* Margin for paragraph */
+    font-size: 16px; /* Font size (adjust as needed) */
+    color: #d1a7f1; /* Light purple text color */
 }
 
-.team-member:last-child p {
-    color: #d1a7f1; /* Same color as the team members' names */
-    font-weight: bold;
+.team-member a {
+    color: #d1a7f1; /* Light purple link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size (adjust as needed) */
+    transition: color 0.3s; /* Smooth transition for link color on hover */
 }
 
-.team-member:last-child a {
-    color: #ff69b4;
-    text-decoration: none;
-    margin-top: 10px;
+.team-member:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+    background-color: #1f1f1f; /* Darker background color on hover */
 }
 
-.team-member:last-child a:hover {
-    text-decoration: underline;
+.team-member a:hover {
+    color: #ff69b4; /* Pink link color on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Contact Section */
