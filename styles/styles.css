@@ -231,15 +231,19 @@ nav ul li a:hover {
     background-color: #282828; /* Match the background color of the team members' tab */
     color: #ffffff; /* White text color */
     padding: 8px 12px; /* Padding around content */
-    margin: 0 auto; /* Center horizontally */
+    margin: 20px auto; /* Center horizontally and add margin */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    display: inline-block; /* Display as inline-block for sizing */
+    display: block; /* Make it a block element to center */
     font-size: 16px; /* Font size (adjust as needed) */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+    text-align: center; /* Center the text */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    width: fit-content; /* Fit content */
 }
 
 .repository:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Larger shadow on hover */
     background-color: #1f1f1f; /* Darker background color on hover */
     color: #ff69b4; /* Pink text color on hover */
 }
