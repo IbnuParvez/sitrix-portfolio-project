@@ -243,6 +243,7 @@ nav ul li a:hover {
 .team-member p {
     margin: 0 0 10px 0; /* Margin for paragraph */
     font-size: 16px; /* Font size (adjust as needed) */
+    color: #d1a7f1; /* Light purple text color */
 }
 
 .team-member a {
@@ -262,7 +263,6 @@ nav ul li a:hover {
     color: #ff69b4; /* Pink link color on hover */
     text-decoration: underline; /* Underline on hover */
 }
-
 
 /* Contact Section */
 #contact {
