@@ -97,21 +97,3 @@ function validateEmail(email) {
     const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return re.test(email);
 }
-
-// Add any JavaScript you need for interactivity
-// For now, just a placeholder for future use
-console.log("Scripts loaded!");
-
-document.addEventListener('DOMContentLoaded', function() {
-    const teamMembers = document.querySelectorAll('.team-member');
-    
-    teamMembers.forEach(member => {
-        member.addEventListener('mouseenter', () => {
-            member.style.transform = 'scale(1.1)';
-        });
-        
-        member.addEventListener('mouseleave', () => {
-            member.style.transform = 'scale(1)';
-        });
-    });
-});
