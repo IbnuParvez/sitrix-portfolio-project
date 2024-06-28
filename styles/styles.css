@@ -226,6 +226,27 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Style for the GitHub repository section */
+.repository {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.repository a {
+    color: #d1a7f1;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.repository a:hover {
+    color: #ff69b4;
+    text-decoration: underline;
+}
+
 /* Contact Section */
 #contact {
     background: #282828;
