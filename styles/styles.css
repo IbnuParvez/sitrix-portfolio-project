@@ -227,38 +227,42 @@ nav ul li a:hover {
 }
 
 /* Style for the GitHub repository section */
-.repository {
+/* Add this to your existing CSS */
+.team-member {
     background-color: #282828; /* Match the background color of the team members' tab */
-    color: #ffffff; /* White text color */
-    padding: 8px 12px; /* Padding around content */
+    color: #d1a7f1; /* Light purple text color */
+    padding: 20px; /* Padding around content */
     margin: 20px auto; /* Center horizontally and add margin */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    display: block; /* Make it a block element to center */
-    font-size: 16px; /* Font size (adjust as needed) */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-align: center; /* Center the text */
+    width: 250px; /* Set a fixed width */
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
-    width: fit-content; /* Fit content */
 }
 
-.repository:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Larger shadow on hover */
-    background-color: #1f1f1f; /* Darker background color on hover */
-    color: #ff69b4; /* Pink text color on hover */
+.team-member p {
+    margin: 0 0 10px 0; /* Margin for paragraph */
+    font-size: 16px; /* Font size (adjust as needed) */
 }
 
-.repository a {
+.team-member a {
     color: #d1a7f1; /* Light purple link color */
     text-decoration: none; /* Remove underline */
-    margin-right: 10px; /* Margin between links */
+    font-size: 16px; /* Font size (adjust as needed) */
     transition: color 0.3s; /* Smooth transition for link color on hover */
 }
 
-.repository a:hover {
+.team-member:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+    background-color: #1f1f1f; /* Darker background color on hover */
+}
+
+.team-member a:hover {
     color: #ff69b4; /* Pink link color on hover */
     text-decoration: underline; /* Underline on hover */
 }
+
 
 /* Contact Section */
 #contact {
