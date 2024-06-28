@@ -228,7 +228,7 @@ nav ul li a:hover {
 
 /* Style for the GitHub repository section */
 .repository {
-    background-color: #1f1f1f; /* Dark background color */
+    background-color: #282828; /* Match the background color of the team members' tab */
     color: #ffffff; /* White text color */
     padding: 8px 12px; /* Padding around content */
     margin: 0 auto; /* Center horizontally */
@@ -236,12 +236,19 @@ nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
     display: inline-block; /* Display as inline-block for sizing */
     font-size: 16px; /* Font size (adjust as needed) */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+.repository:hover {
+    background-color: #1f1f1f; /* Darker background color on hover */
+    color: #ff69b4; /* Pink text color on hover */
 }
 
 .repository a {
     color: #d1a7f1; /* Light purple link color */
     text-decoration: none; /* Remove underline */
     margin-right: 10px; /* Margin between links */
+    transition: color 0.3s; /* Smooth transition for link color on hover */
 }
 
 .repository a:hover {
